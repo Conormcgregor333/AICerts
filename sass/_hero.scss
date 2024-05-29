@@ -1,0 +1,21 @@
+.carousel {
+  .carousel-item {
+    overflow: hidden;
+    height: 28rem;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.event {
+  margin-bottom: 2rem;
+  color: white;
+}
+.head {
+  text-align: center;
+  color: white;
+}

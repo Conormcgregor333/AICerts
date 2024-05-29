@@ -1,0 +1,434 @@
+.partners {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  margin-right: 2rem;
+}
+
+.outer {
+  width: 95%;
+  margin-inline: auto;
+}
+
+.card {
+  flex: 0 0 auto; /* Allow cards to shrink and grow */
+  width: 13.5rem; /* Set width for each card */
+  height: 13.5rem; /* Set height for each card */
+  margin: 1.5rem; /* Add spacing between cards */
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px black;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.partners::-webkit-scrollbar {
+  width: 0;
+}
+
+.upcoming {
+  max-height: 40rem;
+  min-width: 20rem;
+  color: white;
+  background-image: url("https://wallpapercave.com/wp/wp9196524.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+h2,
+h4 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.cntdwn {
+  margin-top: 2rem;
+  display: flex;
+  max-width: 25rem;
+  margin-inline: auto;
+  justify-content: space-between;
+}
+@media screen and (max-width: 460px) {
+  .cntdwn {
+    margin-inline: 0.8rem;
+  }
+}
+
+.tm {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+}
+.tm p {
+  text-align: center;
+}
+.tm .d,
+.tm .h,
+.tm .s,
+.tm .m {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 460px) {
+  .tm {
+    margin-inline: 0.2rem;
+  }
+}
+
+.up-para {
+  margin-top: 2rem;
+  text-align: justify;
+  width: 35%;
+  margin-inline: auto;
+}
+@media screen and (max-width: 800px) {
+  .up-para {
+    width: 85%;
+  }
+}
+
+.up-btn {
+  display: flex;
+  margin-inline: auto;
+  width: 15rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.up-btn button {
+  display: block;
+  height: 3rem;
+  width: 6rem;
+  border: none;
+  background-color: gold;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#alert1:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+#alert2:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+#sec {
+  animation: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#tm1 {
+  animation: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.main-nav {
+  background-image: linear-gradient(to left, rgb(14, 14, 84), black);
+}
+
+.log {
+  margin-bottom: 0.7rem;
+  margin-left: 0.3rem;
+}
+
+.navb {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  color: white !important;
+}
+
+.nav-btn {
+  height: 2rem;
+  width: 6rem;
+  margin-top: 0.4rem;
+  animation: beats;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border: none;
+  border-radius: 1rem;
+  background-color: purple;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  box-shadow: 0 0 5px black;
+}
+@media screen and (max-width: 990px) {
+  .nav-btn {
+    margin-left: 0;
+  }
+}
+
+.ham-btn {
+  transform: translateX(1rem);
+}
+
+.main-logo {
+  margin-top: 1rem;
+}
+.main-logo img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.main-logo span {
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@keyframes beats {
+  0% {
+    transform: scale(1);
+    background-image: linear-gradient(to left, rgb(64, 64, 248), rgb(230, 48, 230));
+  }
+  35% {
+    transform: scale(1.1);
+    background-image: linear-gradient(to left, rgb(48, 48, 187), rgb(197, 51, 197));
+  }
+  50% {
+    transform: scale(1.2);
+    background-image: linear-gradient(to left, rgb(41, 41, 161), rgb(155, 42, 155));
+  }
+  70% {
+    transform: scale(1.1);
+    background-image: linear-gradient(to left, rgb(48, 48, 187), rgb(197, 51, 197));
+  }
+  100% {
+    transform: scale(1);
+    background-image: linear-gradient(to left, rgb(64, 64, 248), rgb(230, 48, 230));
+  }
+}
+.carousel .carousel-item {
+  overflow: hidden;
+  height: 28rem;
+}
+.carousel .carousel-item img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event {
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.head {
+  text-align: center;
+  color: white;
+}
+
+footer {
+  background-image: linear-gradient(to left, rgb(14, 14, 84), black);
+}
+
+.media {
+  margin: 0;
+  padding: 0;
+}
+
+.smedia-big {
+  background-image: linear-gradient(to left, rgb(25, 25, 92), rgb(106, 41, 106));
+}
+.smedia-big .credits {
+  display: none;
+}
+@media screen and (max-width: 560px) {
+  .smedia-big .credits {
+    display: block;
+    background-image: linear-gradient(to left, #6262ee, rgb(146, 19, 146));
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.smedia {
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin-inline: auto;
+}
+.smedia img {
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-left: 1rem;
+}
+@media screen and (max-width: 560px) {
+  .smedia {
+    height: 7rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  .smedia .social-media-icons img {
+    margin-left: 0.5rem;
+  }
+}
+
+.bottom-foot {
+  display: flex;
+  padding-bottom: 2rem;
+  justify-content: space-evenly;
+  max-width: 88%;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 560px) {
+  .bottom-foot {
+    display: none;
+  }
+}
+.bottom-foot .foot-txt {
+  text-align: justify;
+  max-width: 40%;
+}
+.bottom-foot .gray_line {
+  height: 2px;
+  max-width: 10%;
+  background-color: gray;
+}
+.bottom-foot .gray_line_mini {
+  height: 2px;
+  max-width: 50%;
+  background-color: gray;
+}
+@media screen and (max-width: 1080px) {
+  .bottom-foot .service {
+    margin-inline: 1rem;
+  }
+}
+.bottom-foot .service ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 500px) {
+  .bottom-foot {
+    margin-inline: auto;
+  }
+}
+
+.up {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.accordion {
+  width: 70%;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.acc-txt {
+  background-color: rgb(113, 113, 242);
+}
+
+.accordion-body,
+.accordion-header {
+  color: white;
+}
+
+.accordion-header,
+.cordion-item,
+.accordion-button {
+  background-color: rgb(29, 29, 105);
+  color: white;
+}
+
+.tab-container {
+  width: 70%;
+  margin-inline: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(113, 113, 242);
+  color: white;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+  background-color: rgb(57, 57, 129);
+}
+
+.tab-button.active {
+  background-color: rgb(57, 57, 129);
+}
+
+.tab-content {
+  border: 2px solid rgb(57, 57, 129);
+  display: none;
+  border-top: none;
+}
+.tab-content img {
+  margin-top: 2rem;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 3.5rem;
+  margin-inline: auto;
+}
+.tab-content h3,
+.tab-content p {
+  text-align: center;
+  color: white;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-image: linear-gradient(to left, rgb(14, 14, 84), black);
+}/*# sourceMappingURL=main.css.map */

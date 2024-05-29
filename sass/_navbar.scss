@@ -1,0 +1,93 @@
+.main-nav {
+  background-image: linear-gradient(to left, rgb(14, 14, 84), black);
+}
+.log {
+  margin-bottom: 0.7rem;
+  margin-left: 0.3rem;
+}
+.navb {
+  display: flex;
+  justify-content: flex-end;
+}
+a {
+  color: white !important;
+}
+.nav-btn {
+  height: 2rem;
+  width: 6rem;
+  margin-top: 0.4rem;
+  animation: beats;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border: none;
+  border-radius: 1rem;
+  background-color: purple;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  box-shadow: 0 0 5px black;
+  @include max-width(990px) {
+    margin-left: 0;
+  }
+}
+
+.ham-btn {
+  transform: translateX(1rem);
+}
+.main-logo {
+  margin-top: 1rem;
+  img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  span {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
+@keyframes beats {
+  0% {
+    transform: scale(1);
+    background-image: linear-gradient(
+      to left,
+      rgb(64, 64, 248),
+      rgb(230, 48, 230)
+    );
+  }
+  35% {
+    transform: scale(1.1);
+
+    background-image: linear-gradient(
+      to left,
+      rgb(48, 48, 187),
+      rgb(197, 51, 197)
+    );
+  }
+  50% {
+    transform: scale(1.2);
+    background-image: linear-gradient(
+      to left,
+      rgb(41, 41, 161),
+      rgb(155, 42, 155)
+    );
+  }
+  70% {
+    transform: scale(1.1);
+
+    background-image: linear-gradient(
+      to left,
+      rgb(48, 48, 187),
+      rgb(197, 51, 197)
+    );
+  }
+  100% {
+    transform: scale(1);
+    background-image: linear-gradient(
+      to left,
+      rgb(64, 64, 248),
+      rgb(230, 48, 230)
+    );
+  }
+}

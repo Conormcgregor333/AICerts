@@ -1,0 +1,26 @@
+.partners {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  margin-right: 2rem;
+}
+.outer {
+  width: 95%;
+  margin-inline: auto;
+}
+.card {
+  flex: 0 0 auto; /* Allow cards to shrink and grow */
+  width: 13.5rem; /* Set width for each card */
+  height: 13.5rem; /* Set height for each card */
+  margin: 1.5rem; /* Add spacing between cards */
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: 0 0 10px black;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.partners::-webkit-scrollbar {
+  width: 0; //to hide the scroll bar
+}

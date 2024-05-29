@@ -1,0 +1,20 @@
+@import "_partners";
+@import "_upcoming";
+@import "_navbar";
+@import "_hero";
+@import "_footer";
+@import "_accordian";
+@import "_tabs";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-image: linear-gradient(to left, rgb(14, 14, 84), black);
+}
