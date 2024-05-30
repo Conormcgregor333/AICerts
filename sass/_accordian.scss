@@ -2,16 +2,17 @@
   width: 70%;
   margin-inline: auto;
   margin-top: 2rem;
+  background-color: rgb(113, 113, 242);
+
 }
 .acc-txt {
   background-color: rgb(113, 113, 242);
 }
-.accordion-body,
-.accordion-header {
+.accordion-body {
   color: white;
 }
 .accordion-header,
-.cordion-item,
+.accordion-item,
 .accordion-button {
   background-color: rgb(29, 29, 105);
   color: white;
